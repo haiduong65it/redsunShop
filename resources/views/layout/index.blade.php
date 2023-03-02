@@ -30,30 +30,18 @@
 	<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
-    {{-- @include('css') --}}
+    @yield('css')
 </head>
 
 <body>
 
     @include('layout.header')
 
-    @include('layout.banner')
-
-    @include('layout.features')
-
-    @include('layout.category')
-
-    @include('layout.product')
-
-    @include('layout.hotDeal')
-
-    @include('layout.brand')
-
-    @include('layout.relatedProduct')
+    @yield('content')
 
     @include('layout.footer')
 
-    {{-- @include('script') --}}
+    @yield('script')
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
 	 crossorigin="anonymous"></script>
