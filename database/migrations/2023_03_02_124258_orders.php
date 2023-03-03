@@ -26,7 +26,7 @@ return new class extends Migration
             $table->date('orderDate');
             $table->boolean('status')->default(0);
             $table->timestamps();
-        });
+        });`
     }
 
     /**
