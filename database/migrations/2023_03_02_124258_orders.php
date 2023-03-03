@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('idAdmin')->unsigned()->nullable();`
+            $table->unsignedBigInteger('idAdmin')->unsigned()->nullable();
             $table->unsignedBigInteger('idCustomer')->unsigned();
             $table->foreign('idAdmin')->references('id')->on('admins')->onDelete('cascade');
             $table->foreign('idCustomer')->references('id')->on('customers')->onDelete('cascade');
@@ -26,7 +26,7 @@ return new class extends Migration
             $table->date('orderDate');
             $table->boolean('status')->default(0);
             $table->timestamps();
-        });`
+        });
     }
 
     /**
